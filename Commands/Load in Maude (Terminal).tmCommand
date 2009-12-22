@@ -6,10 +6,9 @@
 	<string>nop</string>
 	<key>command</key>
 	<string>#!/bin/bash
-[[ -z "$TM_FILEPATH" ]] &amp;&amp; TM_TMPFILE=$(mktemp -t maudeInTerm)
-: "${TM_FILEPATH:=$TM_TMPFILE}"; cat &gt;"$TM_FILEPATH"
+[[ -z "$TM_FILEPATH" ]] &amp;&amp; export TM_FILEPATH="$(mktemp -t maudeInTerm)"
 
-: ${TM_MAUDE:=maude}
+export TM_MAUDE="${TM_MAUDE:-maude}"
 require_cmd "$TM_MAUDE"
 
 esc () {
