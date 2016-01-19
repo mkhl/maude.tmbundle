@@ -7,7 +7,7 @@
 	<key>contactName</key>
 	<string>Martin Kuehl</string>
 	<key>description</key>
-	<string>Support for the &lt;a href="http://maude.cs.uiuc.edu/"&gt;Maude&lt;/a&gt; rewriting logic system.</string>
+	<string>Equational and rewriting logic specification and programming.</string>
 	<key>mainMenu</key>
 	<dict>
 		<key>items</key>
