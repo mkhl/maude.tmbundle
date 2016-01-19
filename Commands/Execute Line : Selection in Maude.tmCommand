@@ -7,7 +7,6 @@
 	<key>command</key>
 	<string>#!/bin/bash
 export TM_MAUDE="${TM_MAUDE:-maude}"
-require_cmd "$TM_MAUDE"
 
 trim () {
 STR="$1" ruby18 &lt;&lt;"RUBY"
@@ -32,6 +31,20 @@ ruby18 -- "$TM_BUNDLE_SUPPORT/run_maudemate.rb" "$TM_LINE"</string>
 	<string>Execute Line / Selection in Maude</string>
 	<key>output</key>
 	<string>showAsHTML</string>
+	<key>requiredCommands</key>
+	<array>
+		<dict>
+			<key>command</key>
+			<string>maude</string>
+			<key>locations</key>
+			<array>
+				<string>/opt/local/bin/maude</string>
+				<string>/usr/local/bin/maude</string>
+			</array>
+			<key>variable</key>
+			<string>TM_MAUDE</string>
+		</dict>
+	</array>
 	<key>scope</key>
 	<string>source.maude</string>
 	<key>uuid</key>

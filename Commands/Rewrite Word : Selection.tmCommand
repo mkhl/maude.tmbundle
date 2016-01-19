@@ -7,7 +7,6 @@
 	<key>command</key>
 	<string>#!/bin/bash
 export TM_MAUDE="${TM_MAUDE:-maude}"
-require_cmd "$TM_MAUDE"
 
 TM_WORD="${TM_SELECTED_TEXT:-$TM_CURRENT_WORD}"
 
@@ -22,6 +21,20 @@ ruby18 -- "$TM_BUNDLE_SUPPORT/run_maudemate.rb" "rewrite $TM_WORD ."</string>
 	<string>Rewrite Word / Selection</string>
 	<key>output</key>
 	<string>showAsHTML</string>
+	<key>requiredCommands</key>
+	<array>
+		<dict>
+			<key>command</key>
+			<string>maude</string>
+			<key>locations</key>
+			<array>
+				<string>/opt/local/bin/maude</string>
+				<string>/usr/local/bin/maude</string>
+			</array>
+			<key>variable</key>
+			<string>TM_MAUDE</string>
+		</dict>
+	</array>
 	<key>scope</key>
 	<string>source.maude</string>
 	<key>uuid</key>
