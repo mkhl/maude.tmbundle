@@ -2,8 +2,6 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>bundleUUID</key>
-	<string>DC431C52-9E0C-49AC-A178-FEF388470627</string>
 	<key>comment</key>
 	<string>Maude Syntax; version 0.1
 	The Regexp for a "Sort" is:
@@ -23,10 +21,6 @@
 		<string>maude</string>
 		<string>obj</string>
 	</array>
-	<key>foldingStartMarker</key>
-	<string>^.*\b(f?(mod|th)|view)\b.*$</string>
-	<key>foldingStopMarker</key>
-	<string>^.*\bend(f?(m|th)|v)\b.*$</string>
 	<key>keyEquivalent</key>
 	<string>^~M</string>
 	<key>name</key>
