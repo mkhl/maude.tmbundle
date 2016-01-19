@@ -11,7 +11,7 @@ require_cmd "$TM_MAUDE"
 
 TM_WORD="${TM_SELECTED_TEXT:-$TM_CURRENT_WORD}"
 
-ruby -- "$TM_BUNDLE_SUPPORT/run_maudemate.rb" "parse $TM_WORD ."</string>
+ruby18 -- "$TM_BUNDLE_SUPPORT/run_maudemate.rb" "parse $TM_WORD ."</string>
 	<key>fallbackInput</key>
 	<string>word</string>
 	<key>input</key>

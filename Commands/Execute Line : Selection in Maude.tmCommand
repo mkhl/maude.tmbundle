@@ -10,7 +10,7 @@ export TM_MAUDE="${TM_MAUDE:-maude}"
 require_cmd "$TM_MAUDE"
 
 trim () {
-STR="$1" ruby &lt;&lt;"RUBY"
+STR="$1" ruby18 &lt;&lt;"RUBY"
 	str = ENV['STR']
 	str = str.sub(/^\s*(\*{3}|-{3})\s*/, '')
 	str = str.sub(/^.*Maude&gt;\s*/, '')
@@ -21,7 +21,7 @@ RUBY
 
 TM_LINE="$(trim "${TM_SELECTED_TEXT:-$TM_CURRENT_LINE}")"
 
-ruby -- "$TM_BUNDLE_SUPPORT/run_maudemate.rb" "$TM_LINE"</string>
+ruby18 -- "$TM_BUNDLE_SUPPORT/run_maudemate.rb" "$TM_LINE"</string>
 	<key>fallbackInput</key>
 	<string>word</string>
 	<key>input</key>

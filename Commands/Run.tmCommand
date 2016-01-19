@@ -9,7 +9,7 @@
 export TM_MAUDE="${TM_MAUDE:-maude}"
 require_cmd "$TM_MAUDE"
 
-ruby -- "$TM_BUNDLE_SUPPORT/run_maudemate.rb"
+ruby18 -- "$TM_BUNDLE_SUPPORT/run_maudemate.rb"
 </string>
 	<key>input</key>
 	<string>document</string>
